@@ -10,11 +10,36 @@
     <name>Maven Quick Start Archetype</name>
     <url>http://maven.apache.org</url>
 
+    <properties>
+        <slf4j-api.version>1.7.25</slf4j-api.version>
+        <junit.version>4.8.2</junit.version>
+        <logback-core.version>1.2.3</logback-core.version>
+    </properties>
+
     <dependencies>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback-core.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback-core.version}</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.8.2</version>
+            <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
